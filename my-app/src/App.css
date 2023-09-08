@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%23bbbbbb" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+}
+
+:root {
+  min-height: 100vh;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  --blue: #5773ff;
+  --green: #00b96d;
+  --dark: #151619;
+}
+
+body {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-color: #151619;
+}
+  
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+main {
+  min-height: 100vh;
+  max-height: 100%;
+  background-image: url(./img/2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.task-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.task-panel {
+  display: flex;
+  margin-bottom: 50px;
+  min-height: 200px;
+  max-height: 100%;
+  width: 100%;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-panel h1 {
+  margin-top: -7px;
+  color: white;
+  font-weight: 900;
+}
+
+.task-panel p {
+  width: 250px;
+}
+
+.task-panel input {
+  padding: 10px 10px 10px 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  height: 25px;
+  width: 200px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  gap: 50px;
+}
+
+.task-container {
+  max-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #1516196b;
+  backdrop-filter: blur(5px);
+  min-width: 200px;
+  max-width: 500px;
+  padding: 50px 50px 50px 50px;
+  border-radius: 10px;
+}
+
+.task-input {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+  
+.task-desc {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+  
+.task-description {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+.task-date {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+.task-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.task-details {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.task-manage {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-check-task {
+  background-color: transparent;
+  border: none;
+  color: white;
+  border: 1px solid #00b96d;
+  padding: 8px 16px;
+  font-weight: 900;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-check-task:hover {
+  background-color: #00b96d;
+  transform: scale(1.05);
+}
+
+.btn-remove-task {
+  background-color: transparent;
+  border: none;
+  color: white;
+  border: 1px solid #ec0039;
+  padding: 8px 16px;
+  font-weight: 900;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.btn-remove-task:hover {
+  background: #ec0039;
+  transform: scale(1.05);
+}
+
+.btn-add-task {
+  background-color: transparent;
+  width: 50%;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+  font-weight: 900;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 100px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #00b96d;
+}
+
+.btn-add-task:hover {
+  transform: scale(1.05);
+  background-color: #00b96d;
+}
+
+.done {
+  color: #00b96d;
+  text-decoration: line-through;
+}
+
+.removed {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .task-container {
+    width: 220px;
+  }
+}
