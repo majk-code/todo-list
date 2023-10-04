@@ -1,4 +1,4 @@
-🟢 ### LIVE PREVIEW OF TASK MANAGER
+### 🟢 LIVE PREVIEW OF TASK MANAGER
 https://main--silver-gecko-28ef0b.netlify.app/
 
 # Getting Started with Create React App
